@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title>Product Management Website</title>
+    <!-- Intiialization CSS -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="my-page">
+      <div class="contanier">
+        <h1>CURDS</h1>
+        <h3>CREATE READ UPDATE DELETE</h3>
+        <div class="basic-form">
+          <input type="text" placeholder="title of product" class="title">
+          <form class="price-form">
+            <input type="text" placeholder="price" class="price calc">
+            <input type="text" placeholder="taxes" class="taxes calc">
+            <input type="text" placeholder="ads" class="ads calc">
+            <input type="text" placeholder="discount" class="discount">
+            <span class="total">Total: </span>
+          </form>
+          <input type="text" placeholder="count of product" class="count">
+          <input type="text" placeholder="category" class="category">
+          <button class="button create">Create</button>
+          <button class="button update">Update</button>
+          <input type="search" placeholder="search" class="search">
+          <div class="search-box">
+            <button class="button search-by-title active">Search By Title</button>
+            <button class="button search-by-category">Search By Category</button>
+          </div>
+          <button class="button delete">Delete All <span class="count-items">(0)</span></button>
+        </div>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <td>ID</td>
+                <td>TITLE</td>
+                <td>PRICE</td>
+                <td>TAXES</td>
+                <td>ADS</td>
+                <td>DISCOUNT</td>
+                <td>TOTAL</td>
+                <td>CATEGORY</td>
+                <td>UPDATE</td>
+                <td>DELETE</td>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

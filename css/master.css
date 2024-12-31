@@ -1,0 +1,158 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root{
+  --color-two: #29675d;
+  --color-three: #758b82;
+  --text-color: #121212;
+}
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: #474747;
+  margin: 0;
+}
+.contanier{
+  margin: 0 140px;
+}
+@media (max-width: 992px){
+  .contanier{
+    margin: 0 90px;
+  }
+}
+@media (max-width: 767px){
+  .contanier{
+    margin: 0 20px;
+  }
+}
+.button{
+  background-color: var(--color-two);
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: var(--color-three);
+  transition: 0.4s;
+}
+.update{
+  display: none;
+}
+/* End Globl Rules */
+/* Start My Page */
+.my-page{
+  padding: 0px 0 30px;
+}
+.my-page .contanier{
+  text-align: center;
+}
+.my-page .contanier h1{
+  color: var(--color-two);
+  margin: 30px 0 0;
+}
+.my-page .contanier h3{
+  color: var(--color-three);
+  margin: 0 0 20px;
+}
+.my-page .contanier .basic-form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.my-page .contanier .basic-form .price-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 422px){
+  .my-page .contanier .basic-form .price-form{
+    flex-direction: column;
+  }
+}
+.my-page .contanier .basic-form .price-form .total{
+  background-color: var(--color-two);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+}
+.my-page .contanier .basic-form .search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-page .contanier .basic-form .search-box button.active{
+  background-color: var(--color-three);
+}
+.my-page .contanier .basic-form .search-box button{
+  width: 45%;
+}
+.my-page .contanier .basic-form input{
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: white;
+}
+.my-page .contanier .basic-form input:focus{
+  outline-color: var(--color-three);
+}
+.my-page .contanier .table{
+  overflow: auto;
+  max-height: 500px;
+}
+.my-page .contanier .table::-webkit-scrollbar{
+  background-color: #758b82;
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+}
+.my-page .contanier .table::-webkit-scrollbar-thumb{
+  background-color: #29675d;
+  border-radius: 12px;
+}
+.my-page .contanier table{
+  margin: 15px 0 0;
+  border: 1px solid var(--color-three);
+  border-radius: 12px;
+  min-width: 100%;
+  white-space: nowrap;
+  border-spacing: 0;
+}
+@media (max-width: 1029px){
+  .my-page .contanier table{
+    min-width: 940px;
+  }
+}
+.my-page .contanier table thead tr td{
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-three);
+}
+.my-page .contanier table thead tr td:not(:last-of-type),
+.my-page .contanier table tbody tr td:not(:last-of-type){
+  border-right: 1px solid var(--color-three);
+}
+.my-page .contanier table tbody tr:not(:last-of-type) td{
+  border-bottom: 1px solid var(--color-three);
+}
+.my-page .contanier table tbody tr td{
+  padding: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: normal;
+}
+.my-page .contanier table tbody tr td:last-of-type > button{
+  background-color: red;
+}
+/* End My Page */
