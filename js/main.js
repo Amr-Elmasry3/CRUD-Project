@@ -158,7 +158,7 @@ createButton.onclick= function (){
         taxesProduct: `${taxesInput.value}`,
         adsProduct: `${adsInput.value}`,
         discountProduct: `${discount}`,
-        totalProduct: `${totalWithoutDiscount - (totalWithoutDiscount * (parse(discountInput.value) / 100) ) }`;
+        totalProduct: `${totalWithoutDiscount - (totalWithoutDiscount * (parseInt(discountInput.value) / 100) ) }`;
         categoryProduct: `${categoryInput.value}`,
       }
       arrayOfData.push(data);
