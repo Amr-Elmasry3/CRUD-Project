@@ -150,6 +150,7 @@ createButton.onclick= function (){
       tbody.appendChild(tr);
 
       // Storage Data in Local Storage
+      let totalWithoutDiscount= parseInt(priceInput.value) + parseInt(taxesInput.value) + parseInt(adsInput.value);
       let data= {
         idProduct: id - 1,
         titleProduct: `${titleInput.value}`,
@@ -157,7 +158,7 @@ createButton.onclick= function (){
         taxesProduct: `${taxesInput.value}`,
         adsProduct: `${adsInput.value}`,
         discountProduct: `${discount}`,
-        totalProduct: `${total}`,
+        totalProduct: `${totalWithoutDiscount - (totalWithoutDiscount * (parse(discountInput.value) / 100) ) }`;
         categoryProduct: `${categoryInput.value}`,
       }
       arrayOfData.push(data);
